@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliTax</title>
+  <link rel="stylesheet" href="css/login.css">  
+
+    </style>
+</head>
+<body>
+  <div class="outer" >
+        <div class="carousel-text">
+  <div class="wrapper">
+    <form action="/login" method="post">
+      <h2>Login</h2>
+    {{#if error}}
+        <p>{{error}}</p>
+    {{/if}}
+        <div class="input-field">
+        <input type="email" name="email" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" name="password" required>
+        <label>Enter your password</label>
+      </div>
+      <p id="wrong" style="color: red;"></p>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="/register">Register</a></p>
+      </div>
+      </div></div>
+    </form>
+  </div>
+</body>
+</html>
